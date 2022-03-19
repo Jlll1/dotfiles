@@ -1,0 +1,5 @@
+[2022-03-14 21:46:20.808] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-03-14 21:46:20.838] [main] [info] ExtensionHostStarterWorker created
+[2022-03-14 21:46:22.149] [main] [info] Starting extension host with pid 6991 (fork() took 12 ms).
+[2022-03-14 22:23:48.669] [main] [info] Waiting for extension host with pid 6991 to exit.
+[2022-03-14 22:23:48.984] [main] [info] Extension host with pid 6991 exited with code: 0, signal: null.

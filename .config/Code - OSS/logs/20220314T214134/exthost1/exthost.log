@@ -1,0 +1,26 @@
+[2022-03-14 21:41:36.130] [exthost] [info] Extension host with pid 5452 started
+[2022-03-14 21:41:36.130] [exthost] [info] Skipping acquiring lock for /home/rb/.config/Code - OSS/User/workspaceStorage/bd9e8ad9810ef8976088f2a367e81230.
+[2022-03-14 21:41:36.273] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:typescript'
+[2022-03-14 21:41:36.317] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-14 21:41:36.320] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-14 21:41:36.323] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-03-14 21:41:36.604] [exthost] [info] ExtensionService#_doActivateExtension golang.go, startup: true, activationEvent: 'workspaceContains:*.go,*/*.go,*/*/*.go'
+[2022-03-14 21:41:36.901] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-03-14 21:41:36.954] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-03-14 21:41:37.007] [exthost] [info] Eager extensions activated
+[2022-03-14 21:41:37.043] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-14 21:41:37.056] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-14 21:41:37.059] [exthost] [info] ExtensionService#_doActivateExtension usernamehw.errorlens, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-14 21:42:55.424] [exthost] [info] ExtensionService#_doActivateExtension TomRijndorp.find-it-faster, startup: false, activationEvent: 'onCommand:find-it-faster.findFiles'
+[2022-03-14 21:45:09.657] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-03-14 21:45:09.679] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-03-14 21:45:09.994] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+[2022-03-14 21:45:29.775] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-03-14 21:45:29.801] [exthost] [error] Error: Terminal has already been disposed
+    at p._checkDisposed (/usr/lib/code-oss/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:96:36198)
+    at Object.sendText (/usr/lib/code-oss/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:96:34399)
+    at handleCanaryFileChange (/home/rb/.vscode-oss/extensions/tomrijndorp.find-it-faster-0.0.18/out/extension.js:460:14)
+    at FSWatcher.<anonymous> (/home/rb/.vscode-oss/extensions/tomrijndorp.find-it-faster-0.0.18/out/extension.js:430:13)
+    at FSWatcher.emit (events.js:315:20)
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:186:12)
+[2022-03-14 21:45:29.802] [exthost] [info] Extension host with pid 5452 exiting with code 0

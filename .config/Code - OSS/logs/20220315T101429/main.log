@@ -1,0 +1,5 @@
+[2022-03-15 10:14:29.372] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-03-15 10:14:29.420] [main] [info] ExtensionHostStarterWorker created
+[2022-03-15 10:14:31.627] [main] [info] Starting extension host with pid 2282 (fork() took 16 ms).
+[2022-03-15 10:15:20.721] [main] [info] Waiting for extension host with pid 2282 to exit.
+[2022-03-15 10:15:20.755] [main] [info] Extension host with pid 2282 exited with code: 0, signal: null.

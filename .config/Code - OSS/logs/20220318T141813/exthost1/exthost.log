@@ -1,0 +1,32 @@
+[2022-03-18 14:18:15.606] [exthost] [info] Extension host with pid 6162 started
+[2022-03-18 14:18:15.606] [exthost] [info] Skipping acquiring lock for /home/rb/.config/Code - OSS/User/workspaceStorage/bd9e8ad9810ef8976088f2a367e81230.
+[2022-03-18 14:18:15.727] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+[2022-03-18 14:18:15.764] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-18 14:18:15.767] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-18 14:18:15.770] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-03-18 14:18:16.110] [exthost] [info] ExtensionService#_doActivateExtension golang.go, startup: true, activationEvent: 'workspaceContains:*.go,*/*.go,*/*/*.go'
+[2022-03-18 14:18:16.296] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-03-18 14:18:16.350] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-03-18 14:18:16.452] [exthost] [info] Eager extensions activated
+[2022-03-18 14:18:16.508] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-18 14:18:16.524] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-18 14:18:16.528] [exthost] [info] ExtensionService#_doActivateExtension usernamehw.errorlens, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-18 14:24:51.621] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-03-18 14:24:51.626] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-03-18 14:34:34.398] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+[2022-03-18 14:35:21.314] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+[2022-03-18 14:35:21.340] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+[2022-03-18 16:35:58.751] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-03-18 16:35:59.076] [exthost] [error] TypeError: r.some is not a function
+    at Function.saveToDisk (/home/rb/.vscode-oss/extensions/vscodevim.vim-1.22.2/src/register/register.ts:350:30)
+    at Object.e.deactivate (/home/rb/.vscode-oss/extensions/vscodevim.vim-1.22.2/extension.ts:65:18)
+    at v._deactivate (/usr/lib/code-oss/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:100:11513)
+    at /usr/lib/code-oss/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:100:10061
+    at Array.map (<anonymous>)
+    at v.deactivateAll (/usr/lib/code-oss/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:100:10049)
+    at p.terminate (/usr/lib/code-oss/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:104:735)
+    at r (/usr/lib/code-oss/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:114:36400)
+    at Socket.<anonymous> (/usr/lib/code-oss/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:114:34012)
+    at Socket.emit (events.js:327:22)
+    at Pipe.<anonymous> (net.js:673:12)
+[2022-03-18 16:35:59.077] [exthost] [info] Extension host with pid 6162 exiting with code 0
