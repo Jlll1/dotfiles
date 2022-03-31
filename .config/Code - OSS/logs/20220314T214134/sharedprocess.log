@@ -1,7 +1,0 @@
-[2022-03-14 21:41:36.415] [sharedprocess] [info] Starting worker process with pid 5509 (type: watcherServiceParcelSharedProcess, window: 1).
-[2022-03-14 21:42:37.089] [sharedprocess] [info] Uninstalling extension: bodil.file-browser
-[2022-03-14 21:42:37.441] [sharedprocess] [info] Detected extension removed from another source bodil.file-browser
-[2022-03-14 21:42:37.785] [sharedprocess] [info] Successfully uninstalled extension: bodil.file-browser
-[2022-03-14 21:45:21.889] [sharedprocess] [info] Uninstalling extension: tomrijndorp.find-it-faster
-[2022-03-14 21:45:22.127] [sharedprocess] [info] Detected extension removed from another source tomrijndorp.find-it-faster
-[2022-03-14 21:45:23.159] [sharedprocess] [info] Successfully uninstalled extension: tomrijndorp.find-it-faster

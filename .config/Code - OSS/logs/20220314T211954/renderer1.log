@@ -1,9 +1,0 @@
-[2022-03-14 21:19:56.434] [renderer1] [error] [Extension Host] (node:1694) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
-(Use `electron --trace-deprecation ...` to show where the warning was created)
-[2022-03-14 21:20:25.243] [renderer1] [error] [Extension Host] (node:2166) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
-(Use `electron --trace-deprecation ...` to show where the warning was created)
-[2022-03-14 21:20:37.683] [renderer1] [error] invalid pos: Error: invalid pos
-    at handleResponse (/home/rb/.vscode-oss/extensions/golang.go-0.32.0/dist/goMain.js:4366:40)
-    at processMessageQueue (/home/rb/.vscode-oss/extensions/golang.go-0.32.0/dist/goMain.js:4204:13)
-    at Immediate.<anonymous> (/home/rb/.vscode-oss/extensions/golang.go-0.32.0/dist/goMain.js:4190:11)
-    at processImmediate (internal/timers.js:461:21)
