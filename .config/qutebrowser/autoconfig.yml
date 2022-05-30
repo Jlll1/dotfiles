@@ -10,7 +10,8 @@ settings:
     global: false
     https://mail.tutanota.com: true
     https://github.com: true
+    https://voidlinux.org: true
   content.notifications.enabled:
     https://mail.tutanota.com: false
   zoom.default:
-    global: 150%
+    global: 120%
