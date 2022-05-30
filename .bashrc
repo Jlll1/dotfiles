@@ -10,5 +10,3 @@ alias xi="sudo xbps-install" \
       xq="xbps-query" \
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-source .profile
