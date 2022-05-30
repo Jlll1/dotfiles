@@ -7,7 +7,7 @@ export PS1="\W\[\033[32m\]\$(git_branch)\[\033[00m\]$ "
 
 alias xi="sudo xbps-install" \
       xr="sudo xbps-remove" \
-      xq="sudo xbps-query" \
+      xq="xbps-query" \
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
