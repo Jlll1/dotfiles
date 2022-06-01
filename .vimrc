@@ -1,6 +1,6 @@
 set nocompatible
 filetype off
-syntax on
+syntax off
 filetype plugin indent on
 let mapleader = " "
 set modelines=0
