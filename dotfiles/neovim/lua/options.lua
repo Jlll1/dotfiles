@@ -67,3 +67,19 @@ cmp.setup({
   }),
   mapping = require('keymaps').cmp_keymaps(cmp),
 })
+
+-- [[ Lualine ]]
+require('lualine').setup {
+  options = {
+    icons_enabled = false,
+    components_separators = '',
+    section_separators = '',
+  },
+  sections = {
+    lualine_a = { 'mode' },
+    lualine_b = { 'diagnostics' },
+    lualine_c = {},
+    lualine_x = {},
+    lualine_y = { 'branch', 'diff' },
+  }
+}

@@ -10,6 +10,8 @@ end
 
 require('packer').startup(function(use)
   use "wbthomason/packer.nvim"
+
+  -- [[ LSP & LANGUAGE SUPPORT ]]
   use "neovim/nvim-lspconfig"
   use {
     'williamboman/nvim-lsp-installer',
@@ -19,8 +21,6 @@ require('packer').startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
-  use 'vim-scripts/auto-pairs-gentle'
-  use 'ionide/Ionide-vim'
   use {
     'hrsh7th/nvim-cmp',
     requires = {
@@ -34,22 +34,18 @@ require('packer').startup(function(use)
     'tami5/lspsaga.nvim',
     requires = {'neovim/nvim-lspconfig'}
   }
-  use 'ellisonleao/gruvbox.nvim'
+  use 'ionide/Ionide-vim' -- F# syntax highlighting
+
+  -- [[ THEMES ]]
   use 'savq/melange'
+
+  -- [[ OTHER ]]
   use 'ibhagwan/fzf-lua'
-  use {
-    'phha/zenburn.nvim',
-    config = function() require('zenburn').setup() end
-  }
-  use 'lukas-reineke/indent-blankline.nvim'
-  use {
-    's1n7ax/nvim-terminal',
-    config = function()
-      vim.o.hidden = true
-      require('nvim-terinal').setup()
-    end
-  }
-  use 'numToStr/FTerm.nvim'
-  use 'ray-x/lsp_signature.nvim'
+  use 'vim-scripts/auto-pairs-gentle' -- Pair brackets, quotes etc.
+  use 'lukas-reineke/indent-blankline.nvim' -- Display indentation guides for all lines
+  use 'numToStr/FTerm.nvim' -- Floating Terminal
+  use 'ray-x/lsp_signature.nvim' -- Display function signature tooltip
+  use 'nvim-lualine/lualine.nvim' -- Custom status line
 end)
+
 
