@@ -6,12 +6,18 @@
 
 config_version: 2
 settings:
+  content.blocking.method:
+    global: hosts
   content.javascript.enabled:
     global: false
-    https://mail.tutanota.com: true
     https://github.com: true
+    https://mail.tutanota.com: true
     https://voidlinux.org: true
   content.notifications.enabled:
     https://mail.tutanota.com: false
+    https://www111.zippyshare.com: false
+    https://www92.zippyshare.com: false
+  content.register_protocol_handler:
+    https://mail.tutanota.com#url=%25s: false
   zoom.default:
     global: 120%

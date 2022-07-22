@@ -1,0 +1,27 @@
+#!/bin/bash
+
+declare -A PATHS
+PATHS[alacritty]="${HOME}/.config/alacritty"
+PATHS[bashrc]="${HOME}/.bashrc"
+PATHS[vim]="${HOME}/.vimrc"
+PATHS[vscode]="${HOME}/.config/Code - OSS/User/settings.json"
+PATHS[qutebrowser]="${HOME}/.config/qutebrowser/autoconfig.yml"
+PATHS[xinitrc]="${HOME}/.xinitrc"
+
+sync() {
+  rm -rf dotfiles
+  mkdir -p dotfiles
+
+  for CFG in "${!PATHS[@]}"; do
+    cp -rv "${PATHS[${CFG}]}" "dotfiles/${CFG}"
+  done
+}
+
+install() {
+  for CFG in "${!PATHS[@]}"; do
+    rm -r ${PATHS[$CFG]}
+    cp -rv dotfiles/${CFG} ${PATHS[$CFG]}
+  done
+}
+
+$1

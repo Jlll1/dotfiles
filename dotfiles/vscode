@@ -5,11 +5,12 @@
     "editor.fontSize": 16,
     "omnisharp.enableRoslynAnalyzers": true,
     "omnisharp.useModernNet": true,
-    "omnisharp.dotnetPath": "/home/rb/dotnet",
-    "FSharp.dotnetRoot": "~/dotnet/",
+    "omnisharp.dotnetPath": "/home/rb/.dotnet",
     "FAKE.showTargetsOutlineIn": "fsharp",
     "editor.renderWhitespace": "trailing",
     "files.trimTrailingWhitespace": true,
+    "workbench.colorTheme": "Gruvbox Dark Soft",
+    "omnisharp.sdkPath": "/home/rb/.dotnet/sdk/",
+    "FSharp.dotnetRoot": "/home/rb/.dotnet",
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Gruvbox Minor Dark Soft"
 }

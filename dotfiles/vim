@@ -1,6 +1,6 @@
 set nocompatible
 filetype off
-syntax off
+syntax off 
 filetype plugin indent on
 let mapleader = " "
 set modelines=0
@@ -10,6 +10,7 @@ set incsearch
 set undofile
 set nobackup
 set nowritebackup
+set noswapfile
 set visualbell
 set encoding=utf-8
 set formatoptions=tcqrn1

@@ -10,3 +10,7 @@ alias xi="sudo xbps-install" \
       xq="xbps-query" \
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export PATH="$PATH:/home/rb/.dotnet/tools"
+export DOTNET_ROOT=~/.dotnet
+export PATH=$PATH:$DOTNET_ROOT
