@@ -20,8 +20,8 @@ sync() {
 
 install() {
   for CFG in "${!PATHS[@]}"; do
-    rm -r ${PATHS[$CFG]}
-    cp -rv dotfiles/${CFG} ${PATHS[$CFG]}
+    rm -r "${PATHS[$CFG]}"
+    cp -rv "dotfiles/${CFG}" "${PATHS[$CFG]}"
   done
 }
 
