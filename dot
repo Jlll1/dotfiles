@@ -3,6 +3,7 @@
 declare -A PATHS
 PATHS[alacritty]="${HOME}/.config/alacritty"
 PATHS[bashrc]="${HOME}/.bashrc"
+PATHS[neovim]="${HOME}/.config/nvim"
 PATHS[vim]="${HOME}/.vimrc"
 PATHS[vscode]="${HOME}/.config/Code - OSS/User/settings.json"
 PATHS[qutebrowser]="${HOME}/.config/qutebrowser/autoconfig.yml"
