@@ -10,17 +10,20 @@ PATHS[qutebrowser]="${HOME}/.config/qutebrowser/autoconfig.yml"
 PATHS[xinitrc]="${HOME}/.xinitrc"
 
 sync() {
-  rm -rf dotfiles
-  mkdir -p dotfiles
-
   for CFG in "${!PATHS[@]}"; do
-    cp -rv "${PATHS[${CFG}]}" "dotfiles/${CFG}"
+    P="${PATHS[${CFG}]}"
+    if [ -d "$P" ]; then
+      cp -rv "$P" "dotfiles/"
+    elif [ -f "$P" ]; then
+      cp -rv "$P" "dotfiles/${CFG}"
+    else
+      rm -rf "dotfiles/${CFG}"
+    fi
   done
 }
 
 install() {
   for CFG in "${!PATHS[@]}"; do
-    rm -r "${PATHS[$CFG]}"
     cp -rv "dotfiles/${CFG}" "${PATHS[$CFG]}"
   done
 }
