@@ -1,13 +1,41 @@
 #!/bin/bash
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
 
 declare -A PATHS
 PATHS[alacritty]="${HOME}/.config/alacritty"
 PATHS[bashrc]="${HOME}/.bashrc"
-PATHS[neovim]="${HOME}/.config/nvim"
 PATHS[vim]="${HOME}/.vimrc"
 PATHS[vscode]="${HOME}/.config/Code - OSS/User/settings.json"
 PATHS[qutebrowser]="${HOME}/.config/qutebrowser/autoconfig.yml"
 PATHS[xinitrc]="${HOME}/.xinitrc"
+
+declare -A SUBMODULES
+SUBMODULES[nvim]="${HOME}/.config/nvim"
+
+git_sync() {
+  git add .
+  git commit -m"Sync"
+  git push
+}
+
+sync_submodules() {
+  for CFG in "${!SUBMODULES[@]}"; do
+    P="${SUBMODULES[${CFG}]}"
+    if [ -d "$P" ]; then
+      cp -rv "$P" "dotfiles/"
+    elif [ -f "$P" ]; then
+      cp -rv "$P" "dotfiles/${CFG}"
+    else
+      rm -rf "dotfiles/${CFG}"
+    fi
+  done
+
+  for CFG in "${!SUBMODULES[@]}"; do
+    cd "dotfiles/${CFG}"
+    git_sync
+    cd $SCRIPT_DIR
+  done
+}
 
 sync() {
   for CFG in "${!PATHS[@]}"; do
@@ -20,6 +48,9 @@ sync() {
       rm -rf "dotfiles/${CFG}"
     fi
   done
+
+  sync_submodules &&
+  git_sync
 }
 
 install() {
